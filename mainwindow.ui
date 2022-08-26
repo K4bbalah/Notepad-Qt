@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>727</width>
+    <height>455</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Notepad</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Files/notes.png</normaloff>Files/notes.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(233, 233, 233);
+selection-background-color: rgb(6, 101, 255);</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>691</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>727</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QMenu" name="menuArquivos">
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="acceptDrops">
+     <bool>true</bool>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
+    <property name="whatsThis">
+     <string/>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>Arquivos</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionNovo"/>
+    <addaction name="separator"/>
+    <addaction name="actionLer_Arquivos"/>
+    <addaction name="actionSalvar_Como"/>
+    <addaction name="actionSalvar"/>
+    <addaction name="separator"/>
+    <addaction name="actionSair"/>
+   </widget>
+   <widget class="QMenu" name="menuSobre">
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>Sobre</string>
+    </property>
+    <addaction name="actionSobre_Dev"/>
+    <addaction name="separator"/>
+    <addaction name="actionSobre_Qt"/>
+   </widget>
+   <widget class="QMenu" name="menuTema">
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Tema</string>
+    </property>
+    <addaction name="actionClaro"/>
+    <addaction name="actionEscuro"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuRecursos">
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Recursos</string>
+    </property>
+    <addaction name="actionApagar"/>
+    <addaction name="actionCopiar"/>
+    <addaction name="actionColar"/>
+    <addaction name="actionRecortar"/>
+    <addaction name="actionRefazer"/>
+    <addaction name="actionDesfazer"/>
+   </widget>
+   <widget class="QMenu" name="menuFonte">
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Fonte</string>
+    </property>
+    <addaction name="actionTipo_de_Fonte"/>
+    <addaction name="actionCor_da_Fonte_2"/>
+   </widget>
+   <addaction name="menuArquivos"/>
+   <addaction name="menuRecursos"/>
+   <addaction name="menuFonte"/>
+   <addaction name="menuTema"/>
+   <addaction name="menuSobre"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNovo"/>
+   <addaction name="actionLer_Arquivos"/>
+   <addaction name="actionSalvar"/>
+   <addaction name="actionSalvar_Como"/>
+   <addaction name="separator"/>
+   <addaction name="actionDesfazer"/>
+   <addaction name="actionRefazer"/>
+   <addaction name="separator"/>
+   <addaction name="actionCopiar"/>
+   <addaction name="actionColar"/>
+   <addaction name="actionRecortar"/>
+   <addaction name="actionApagar"/>
+   <addaction name="separator"/>
+   <addaction name="actionClaro"/>
+   <addaction name="actionEscuro"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actionSalvar">
+   <property name="icon">
+    <iconset resource="Arquivos_De_Recursos.qrc">
+     <normaloff>:/new/icones/Files/salve-.png</normaloff>:/new/icones/Files/salve-.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salvar</string>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+  </action>
+  <action name="actionLer_Arquivos">
+   <property name="icon">
+    <iconset resource="Arquivos_De_Recursos.qrc">
+     <normaloff>:/new/icones/Files/pasta (1).png</normaloff>:/new/icones/Files/pasta (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>Abrir Arquivos</string>
+   </property>
+  </action>
+  <action name="actionSobre_Dev">
+   <property name="icon">
+    <iconset resource="Arquivos_De_Recursos.qrc">
+     <normaloff>:/new/icones/Files/dev_24012.png</normaloff>:/new/icones/Files/dev_24012.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sobre Dev</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+  </action>
+  <action name="actionSobre_Qt">
+   <property name="icon">
+    <iconset resource="Arquivos_De_Recursos.qrc">
+     <normaloff>:/new/icones/Files/linguist_qt4_qt_22402.png</normaloff>:/new/icones/Files/linguist_qt4_qt_22402.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sobre Qt</string>
+   </property>
+  </action>
+  <action name="actionEscuro">
+   <property name="icon">
+    <iconset resource="Arquivos_De_Recursos.qrc">
+     <normaloff>:/new/icones/Files/moon_stars_night_midnight_sky_icon_194278.png</normaloff>:/new/icones/Files/moon_stars_night_midnight_sky_icon_194278.png</iconset>
+   </property>
+   <property name="text">
+    <string>Escuro</string>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+  </action>
+  <action name="actionClaro">
+   <property name="icon">
+    <iconset resource="Arquivos_De_Recursos.qrc">
+     <normaloff>:/new/icones/Files/sol.png</normaloff>:/new/icones/Files/sol.png</iconset>
+   </property>
+   <property name="text">
+    <string>Claro</string>
+   </property>
+  </action>
+  <action name="actionSair">
+   <property name="icon">
+    <iconset resource="Arquivos_De_Recursos.qrc">
+     <normaloff>:/new/icones/Files/ShutDown_41046.png</normaloff>:/new/icones/Files/ShutDown_41046.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sair</string>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+  </action>
+  <action name="actionApagar">
+   <property name="icon">
+    <iconset resource="Arquivos_De_Recursos.qrc">
+     <normaloff>:/new/icones/Files/gui_eraser_icon_157160.png</normaloff>:/new/icones/Files/gui_eraser_icon_157160.png</iconset>
+   </property>
+   <property name="text">
+    <string>Apagar</string>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+  </action>
+  <action name="actionSalvar_Como">
+   <property name="icon">
+    <iconset resource="Arquivos_De_Recursos.qrc">
+     <normaloff>:/new/icones/Files/diskette_save_saveas_1514.png</normaloff>:/new/icones/Files/diskette_save_saveas_1514.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salvar Como</string>
+   </property>
+  </action>
+  <action name="actionNovo">
+   <property name="icon">
+    <iconset resource="Arquivos_De_Recursos.qrc">
+     <normaloff>:/new/icones/Files/novo-documento.png</normaloff>:/new/icones/Files/novo-documento.png</iconset>
+   </property>
+   <property name="text">
+    <string>Novo</string>
+   </property>
+  </action>
+  <action name="actionCopiar">
+   <property name="icon">
+    <iconset resource="Arquivos_De_Recursos.qrc">
+     <normaloff>:/new/icones/Files/1455554314_line-15_icon-icons.com_53330.png</normaloff>:/new/icones/Files/1455554314_line-15_icon-icons.com_53330.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copiar</string>
+   </property>
+  </action>
+  <action name="actionColar">
+   <property name="icon">
+    <iconset resource="Arquivos_De_Recursos.qrc">
+     <normaloff>:/new/icones/Files/copy_paste_document_file_1557.png</normaloff>:/new/icones/Files/copy_paste_document_file_1557.png</iconset>
+   </property>
+   <property name="text">
+    <string>Colar</string>
+   </property>
+  </action>
+  <action name="actionRecortar">
+   <property name="icon">
+    <iconset resource="Arquivos_De_Recursos.qrc">
+     <normaloff>:/new/icones/Files/cut.png</normaloff>:/new/icones/Files/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>Recortar</string>
+   </property>
+  </action>
+  <action name="actionRefazer">
+   <property name="icon">
+    <iconset resource="Arquivos_De_Recursos.qrc">
+     <normaloff>:/new/icones/Files/redoarrow_rehace_1547.png</normaloff>:/new/icones/Files/redoarrow_rehace_1547.png</iconset>
+   </property>
+   <property name="text">
+    <string>Refazer</string>
+   </property>
+  </action>
+  <action name="actionDesfazer">
+   <property name="icon">
+    <iconset resource="Arquivos_De_Recursos.qrc">
+     <normaloff>:/new/icones/Files/undoarrow_undo_1534.png</normaloff>:/new/icones/Files/undoarrow_undo_1534.png</iconset>
+   </property>
+   <property name="text">
+    <string>Desfazer</string>
+   </property>
+  </action>
+  <action name="actionTipo_de_Fonte">
+   <property name="icon">
+    <iconset resource="Arquivos_De_Recursos.qrc">
+     <normaloff>:/new/icones/Files/fonts_font__6310.png</normaloff>:/new/icones/Files/fonts_font__6310.png</iconset>
+   </property>
+   <property name="text">
+    <string>Tipo de Fonte</string>
+   </property>
+  </action>
+  <action name="actionCor_da_Fonte_2">
+   <property name="icon">
+    <iconset resource="Arquivos_De_Recursos.qrc">
+     <normaloff>:/new/icones/Files/paint-palette.png</normaloff>:/new/icones/Files/paint-palette.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cor da Fonte</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Arquivos_De_Recursos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

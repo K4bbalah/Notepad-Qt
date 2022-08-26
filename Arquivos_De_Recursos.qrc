@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/new/icones">
+        <file>Files/1455554314_line-15_icon-icons.com_53330.png</file>
+        <file>Files/communication_information_aid_disclaimer_customer_service_about_guide_help_info_icon_210836.png</file>
+        <file>Files/copy_paste_document_file_1557.png</file>
+        <file>Files/cut.png</file>
+        <file>Files/dev_24012.png</file>
+        <file>Files/diskette_save_saveas_1514.png</file>
+        <file>Files/Erase-80_icon-icons.com_57327.png</file>
+        <file>Files/fonts_font__6310.png</file>
+        <file>Files/gui_eraser_icon_157160.png</file>
+        <file>Files/linguist_qt4_qt_22402.png</file>
+        <file>Files/lua.png</file>
+        <file>Files/moon_stars_night_midnight_sky_icon_194278.png</file>
+        <file>Files/new_file256_25213 (1).png</file>
+        <file>Files/new_file256_25213.png</file>
+        <file>Files/Notepad.ico</file>
+        <file>Files/notes.png</file>
+        <file>Files/novo-documento.png</file>
+        <file>Files/paint-palette.png</file>
+        <file>Files/pasta (1).png</file>
+        <file>Files/pasta.png</file>
+        <file>Files/redoarrow_rehace_1547.png</file>
+        <file>Files/salvar.png</file>
+        <file>Files/salve-.png</file>
+        <file>Files/ShutDown_41046.png</file>
+        <file>Files/sol.png</file>
+        <file>Files/undoarrow_undo_1534.png</file>
+    </qresource>
+</RCC>
